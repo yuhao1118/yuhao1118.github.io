@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>D3 assignment</title>
+  </head>
+  <body>
+    <h1 id='title'></h1>
+    <button id="reset">reset zoom</button>
+    <select id="colorDropDown" title="select a colour">
+      <option value="rainbow">rainbow</option>
+      <option value="blue">blue</option>
+      <option value="orange">orange</option>
+      <option value="green">green</option>
+      <option value="grey">grey</option>
+      <option value="purple">purple</option>
+      <option value="red">red</option>
+    </select>
+    <select id="funcDropDown" title="select a scale function">
+      <option value="seque">seque</option>
+      <option value="sqrt">sqrt</option>
+      <option value="log">log</option>
+    </select>
+    <select id="statisLevel" title="select a statistic level">
+      <option value="states">state level</option>
+      <option value="counties">county level</option>
+    </select>
+    <input type="text" id="titleVal" placeholder="Change title" />
+    <button id="submit">submit</button>
+    <button id="toggle">toggle dataset</button>
+    <br />
+    <br />
+    <svg id='USChoropleth'></svg>
+  <script type="text/javascript" src="main.js"></script></body>
+  <style>
+    body {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  </style>
+</html>
