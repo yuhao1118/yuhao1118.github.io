@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Yuhao.dev',
-  tagline: 'Yuhao is all you need!',
+  tagline: 'Yuhao 就是你所需要的全部！｜ Yuhao is all you need!',
   url: 'https://yuhao1118.github.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -23,8 +23,8 @@ const config = {
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'zh-Hans',
+    locales: ['en', 'zh-Hans'],
   },
 
   presets: [
@@ -56,8 +56,12 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      colorMode: {
+        defaultMode: 'dark',
+        disableSwitch: true,
+      },
       navbar: {
-        title: 'My Site',
+        title: '首页',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
@@ -67,11 +71,12 @@ const config = {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Tutorial',
+            label: '教程',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          { to: '/blog', label: '博客', position: 'left' },
+          { to: '/projects', label: '项目', position: 'right' },
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/yuhao1118',
             label: 'GitHub',
             position: 'right',
           },
@@ -81,46 +86,34 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: '文档',
             items: [
               {
-                label: 'Tutorial',
+                label: '教程',
                 to: '/docs/intro',
               },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
+                label: '博客',
                 to: '/blog',
+              },
+            ],
+          },
+          
+          {
+            title: '更多',
+            items: [
+              {
+                label: '项目',
+                to: '/projects',
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/yuhao1118',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Yuhao.dev, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
