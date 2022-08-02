@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkyuhao_manual=self.webpackChunkyuhao_manual||[]).push([[4364],{9501:a=>{a.exports=JSON.parse('{"permalink":"/en/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
