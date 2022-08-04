@@ -57,8 +57,8 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       colorMode: {
-        defaultMode: 'dark',
-        disableSwitch: true,
+        disableSwitch: false,
+        respectPrefersColorScheme: true,
       },
       navbar: {
         title: '首页',
@@ -98,7 +98,7 @@ const config = {
               },
             ],
           },
-          
+
           {
             title: '更多',
             items: [
